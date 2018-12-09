@@ -23,7 +23,7 @@ def material_at(planet, coords)
   end
 end
 
-planet = File.readlines('planet.txt').map! { |line| line.strip.split('') }
+planet = File.readlines('../lib/planet.txt').map! { |line| line.strip.split('') }
 
 landing_coords = random_landing_on(planet)
 
